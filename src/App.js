@@ -72,7 +72,7 @@ function App() {
           </a>
         </div>
 
-        <img src={heroImg} alt="Virtual reality" />
+        <img className="image" src={heroImg} alt="Virtual reality" />
       </div>
       <div>
         <ul className="instruction-list">
