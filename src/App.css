@@ -9,6 +9,18 @@ html {
   background-image: url('./images/background.png');
 }
 
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lang-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 .title {
   font-size: 30px;
   line-height: 1.5;
@@ -30,8 +42,6 @@ html {
 }
 
 .hero-box {
-  /* display: flex;
-  align-items: center; */
   padding: 10px;
 }
 
@@ -77,9 +87,23 @@ html {
   border: none;
 }
 
+.add-btn,
+.remove-btn {
+  background: linear-gradient(to right, #C0B7E8, #8176AF);
+  width: 50px;
+  height: 50px;border: none;
+  border-radius: 50px;
+}
+
+.icon {
+  object-fit: contain;
+  width: 20px;
+  height: 20px;
+}
+
 .button-link::after {
   position: absolute;
-  top: -25px;
+  top: -9px;
   right: -88px;
   content: '';
   display: inline-block;
@@ -146,37 +170,6 @@ html {
   background-image: url('./images/03.svg');
   
 }
-/* 
-
-.instruction-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 0;
-  margin: 0;
-  margin-bottom: 50px;
-  height: 167px;
-  background: linear-gradient(to right,#211E2E, #433D60, #211E2E);
-  border-radius: 80px;
-  list-style-type: none;
-}
-
-.instruction-list-item {
-  position: relative;
-  margin: 0;
-  color: white;
-}
-
-.instruction-list-item:not(:last-child)::after {
-  position: absolute;
-  top: -19px;
-  right: -88px;
-  content: '';
-  display: inline-block;
-  width: 75px;
-  height: 75px;
-  background-image: url('./images/arrow-small-right.svg');
-} */
 
 .button {
   display: block;
@@ -247,10 +240,6 @@ html {
  display: none; 
 }
 
-.input-container {
-  display: flex;
-  justify-content: center;
-}
 
 .input {
   width: 400px;
